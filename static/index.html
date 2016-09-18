@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=0"
+        name="viewport">
+    <title>一品一码报表</title>
+    <link rel="stylesheet" href="styles/report_index.css">
+    <script>
+         (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if(clientWidth>=640){
+                        docEl.style.fontSize = '100px';
+                    }else{
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<body>
+    <header class="header-bar">
+        <a href="javascript:;" class="header-logo"></a>
+        华南地区出货排行榜
+        <a href="javascript:;" class="header-search"></a>
+    </header>   
+    <section class="list-box">
+         <h3 class="title">
+            <i class="title-icon"></i>
+            <span class="title-textname">我的代理商</span>
+            <span class="title-line">|</span>5人
+        </h3>
+        <ul>
+            <li class="item">
+                <h4 class="item-title">周金柜</h4>
+                <ol class="item-colume">
+                    <li class="item-col item-col-1">当前库存<span class="line">|</span>3000盒</li>
+                    <li class="item-col item-col-2">总计扫码率<span class="line">|</span>100%</li>
+                </ol>
+                <ol class="item-colume">
+                    <li class="item-col item-col-3">采购记录<span class="line">|</span>5批</li>
+                    <li class="item-col item-col-4">总计充值率<span class="line">|</span>100%</li>
+                </ol>
+                <a href="javascript:;" class="more-info"></a>
+            </li>
+            <li class="item">
+                <h4 class="item-title">周金柜</h4>
+                <ol class="item-colume">
+                    <li class="item-col item-col-1">当前库存<span class="line">|</span>3000盒</li>
+                    <li class="item-col item-col-2">总计扫码率<span class="line">|</span>100%</li>
+                </ol>
+                <ol class="item-colume">
+                    <li class="item-col item-col-3">采购记录<span class="line">|</span>5批</li>
+                    <li class="item-col item-col-4">总计充值率<span class="line">|</span>100%</li>
+                </ol>
+                <a href="javascript:;" class="more-info"></a>
+            </li>
+            <li class="item">
+                <h4 class="item-title">周金柜</h4>
+                <ol class="item-colume">
+                    <li class="item-col item-col-1">当前库存<span class="line">|</span>3000盒</li>
+                    <li class="item-col item-col-2">总计扫码率<span class="line">|</span>100%</li>
+                </ol>
+                <ol class="item-colume">
+                    <li class="item-col item-col-3">采购记录<span class="line">|</span>5批</li>
+                    <li class="item-col item-col-4">总计充值率<span class="line">|</span>100%</li>
+                </ol>
+                <a href="javascript:;" class="more-info"></a>
+            </li>
+        </ul>
+    </section> 
+    <section id="searchbox">
+        <div class="search-bg"></div>
+        <div class="search-main">
+            <header class="s-header">
+                <h3 class="s-header-name">高级搜索</h3>
+                <input type="text" class="s-header-input" placeholder="">
+                <a href="javascript:;" class="s-header-cancle">取消</a>
+            </header>
+            <div class="s-condition condition-agent clearfix">
+                <div class="title clearfix">
+                    <h4 class="title-name">代理商</h4>
+                    <a href="javascript:;" class="title-more j_more">
+                        全部<i class="icon"></i>
+                    </a>
+                </div>
+                <ul class="condition-list clearfix">
+                    <li class="condition-item-outer condition-curr">
+                        <div class="condition-item">代理商<i class="condition-icon"></i></div>
+                    </li>
+                    <li class="condition-item-outer">
+                        <div class="condition-item">代理商<i class="condition-icon"></i></div>
+                    </li>
+                    <li class="condition-item-outer">
+                        <div class="condition-item">代理商<i class="condition-icon"></i></div>
+                    </li>
+                    <li class="condition-item-outer">
+                        <div class="condition-item">代理商<i class="condition-icon"></i></div>
+                    </li>
+                    <li class="condition-item-outer">
+                        <div class="condition-item">代理商<i class="condition-icon"></i></div>
+                    </li>
+                    <li class="condition-item-outer">
+                        <div class="condition-item">代理商<i class="condition-icon"></i></div>
+                    </li>
+                </ul>
+            </div>   
+            <div class="s-condition condition-area clearfix">
+                <div class="title clearfix">
+                    <h4 class="title-name">地址</h4>
+                    <a href="javascript:;" class="title-cancle j_cancle">
+                        取消
+                    </a>
+                </div>
+                
+            </div> 
+            <div class="s-condition condition-order clearfix">
+                <div class="title clearfix">
+                    <h4 class="title-name">排序</h4>
+                </div>
+                <ul class="condition-list clearfix">
+                    <li class="condition-item-outer condition-curr">
+                        <div class="condition-item">进货金额最多</div>
+                    </li>
+                    <li class="condition-item-outer">
+                        <div class="condition-item">扫描率最高</div>
+                    </li>
+                    <li class="condition-item-outer">
+                        <div class="condition-item">充值率最高</div>
+                    </li>
+                </ul>
+            </div>      
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,161 @@
+#searchbox {
+    display: none;
+    font-size: 0.2rem;
+    .search-bg {
+        position: fixed;
+        left: 0;
+        top: 0;
+        z-index: 1000;
+        background: rgba(0, 0, 0, 0.85);
+    }
+    .search-main {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 90%;
+        background: #f7f7f7;
+        height: 100%;
+        overflow-x: hidden;
+        overflow-y: auto; 
+    }
+    .s-header {
+        padding: 20px 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        line-height: 24px;
+    }
+    .s-header-name {
+        width: 1.25rem;
+        text-align: center;
+        font-size: 0.24rem;
+        color: #333;
+    }
+    .s-header-cancle {
+        width: 0.72rem;
+        text-align: center;
+        color: #333;
+    }
+    .s-header-input {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        flex: 1;    
+        border: 1px solid #f7f7f7;
+        border-radius: 0.04rem;
+        height: 22px;
+    }
+    .s-condition {
+        width: 100%;
+        margin-bottom: 0.05rem;
+        background: #fff;
+        .title {
+            padding: 0 0.18rem;
+            height: 0.48rem;
+            line-height: 0.48rem;
+        }
+        .title-name {
+            float: left;
+            font-size: 0.22rem;
+            color: #333;
+        }
+        .title-more {
+            float: right;
+            font-size: 0.20rem;
+            color: #666;
+            .icon {
+                margin-left: 0.05rem;
+                display: inline-block;
+                width: 0.14rem;
+                height: 0.14rem;
+                border: solid #bfbfbf;
+                border-width: 1px 1px 0 0;
+                -webkit-transform: rotate(135deg);
+                transform: rotate(135deg);
+            }
+        }
+        .title-cancle {
+            float: right;
+            color: #d7d9de;
+        }
+        .show-more {
+            .icon {
+                transform: rotate(-45deg);
+                transform: rotate(-45deg);
+            }
+        }
+        .condition-list {
+            
+        }
+        .condition-item-outer {
+            float: left;
+            width: 25%;
+            text-align: center;
+        }
+        .condition-item {
+            display: inline-block;
+            height: 0.3rem;
+            line-height: 0.3rem;
+            width: 1rem;
+            border: 0.01rem solid #f0f2f5;
+            text-align: center;
+            color: #333;
+            font-size: 0.2rem;
+            position: relative;
+            margin-bottom: 0.18rem;
+            border-radius: 0.05rem;
+        }
+        .condition-icon {
+            display: none;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            width: 0.16rem;
+            height: 0.14rem;
+            background: url(../images/icon_condition.jpg) no-repeat;
+            background-size: contain; 
+        }
+        .condition-curr {
+            .condition-item {
+                height: 0.28rem;
+                line-height: 0.28rem;
+                width: 0.98rem;
+                border: 0.02rem solid #dedede;
+            }        
+            .condition-icon {
+                display: block;
+            }
+        }
+    }
+.condition-area {
+    height: 100px;
+}
+.condition-order {
+    .condition-item-outer {
+        float: left;
+        width: 33%;
+        text-align: center;
+    }
+    .condition-item {
+        display: inline-block;
+        width: 1.4rem;
+        height: 0.3rem;
+        line-height: 0.3rem;
+        border: 1px solid #f0f2f5;
+        text-align: center;
+        font-size: 0.2rem;
+    }
+    .condition-curr {
+        .condition-item {
+            display: inline-block;
+            width: 1.42rem;
+            height: 0.32rem;
+            line-height: 0.32rem;
+            border: none;
+            text-align: center;
+            font-size: 0.2rem;
+            background: #f0f2f5;
+            overflow: hidden;
+        }
+    }
+}
+}

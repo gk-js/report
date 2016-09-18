@@ -1,0 +1,98 @@
+@import "common";
+
+body {
+    background: #494c55;
+    min-width: 320px;
+    max-width: 640px;
+    margin: 0 auto;
+    font-size: 0.14rem;
+}
+
+.header-bar {
+    position: relative;
+    margin: 0 0.2rem;
+    height: 52px;
+    line-height: 52px;
+    text-align: center;
+    font-size: 0.26rem;
+    color: #fff;
+}
+.header-back {
+    display: block;
+    margin-top: -0.09rem;
+    position: absolute;
+    left: 0.1rem;
+    top: 50%;
+    width: 0.18rem;
+    height: 0.18rem;
+    border: solid #fff;
+    border-width: 1px 0 0 1px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+.header-search {
+    display: block;
+    position: absolute;
+    margin-top: -0.15rem;
+    right: 0.1rem;
+    top: 0.27rem;
+    top: 50%;
+    width: 0.30rem;
+    height: 0.30rem;
+    background: url(../images/search.png) no-repeat;
+    background-size: contain;
+}
+.contentbox {
+    margin: 0.2rem;
+    background: #fff;
+    border-radius: 0.1rem;
+}
+.list-box {
+    padding: 0 0.2rem;
+    .item {
+        position: relative;
+        padding: 30px 0 17px 0;
+        border-bottom: 1px solid #dedede;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: flex;
+        .select-icon {
+            margin-top: -0.1rem;
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 50%;
+            width: 0.24rem;
+            height: 0.24rem;
+            border: 1px solid #e0e0e0;
+            border-radius: 50%;
+        }
+        .image {
+            margin-left: 0.5rem;
+            margin-right: 0.18rem;
+            width: 0.7rem;
+            height: 0.7rem;
+            border-radius: 0.05rem;
+        }
+        .text-info {
+            display: inline-block;
+        }
+        .text-name {
+            line-height: 0.36rem;
+            color: #333;
+            font-size: 0.24rem;
+            font-weight: bolder;
+        }
+        .text-address {
+            line-height: 0.34rem;
+            font-size: 0.2rem;
+        }
+    }
+    .curr {
+        .select-icon {
+            border-color: #999;
+            background: #999 url(../images/selected.png) no-repeat;
+            background-size: contain; 
+        }
+    }
+}
