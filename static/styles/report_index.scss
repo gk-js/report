@@ -13,7 +13,7 @@ body {
     height: 52px;
     line-height: 52px;
     text-align: center;
-    font-size: 0.26rem;
+    font-size: 18px;
     color: #fff;
 }
 .header-logo {
@@ -52,6 +52,7 @@ body {
         line-height: 0.34rem;
         font-size: 0.24rem;
         color: #a0a0a0;
+        font-size: 14px;
     }
     .title-icon {
         float: left;
@@ -71,21 +72,23 @@ body {
     .item {
         position: relative;
         margin-top: 0.4rem;
+        padding-bottom: 0.3rem;
         border-bottom: 1px solid #dedede;
         .item-title {
-            margin-bottom: 0.32rem;
+            margin-bottom: 0.4rem;
             font-size: 0.22rem;
             color:#333;
+            font-weight: bolder;
         }
         .item-colume {
-            padding-bottom: 0.2rem;
+            padding-bottom: 0.3rem;
             display: -webkit-box;
             display: -webkit-flex;
             display: flex;
         }
         .item-col {
             width: 50%;
-            font-size: 0.20rem;
+            font-size: 14px;
             .line {
                 margin: 0 0.07rem;
             }
@@ -106,7 +109,7 @@ body {
             position: absolute;
             display: block;
             right: 0.1rem;
-            bottom: 0.47rem;
+            bottom: 0.9rem;
             width: 0.18rem;
             height: 0.18rem;
             border: solid #e4e4e4;
@@ -116,6 +119,9 @@ body {
             
         }
     }
+    
 }
-
+li.item:last-child {
+    border: none;
+}
 @import "./search"

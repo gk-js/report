@@ -39,5 +39,5 @@ fis.match('*.png', {
 
 //配置路径
 fis.match('*.{eot,svg,ttf,woff,jpg,png}', {
-  release: '../$0'
+  release: '/dist/$0'
 });
