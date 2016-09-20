@@ -13,7 +13,7 @@ body {
     height: 52px;
     line-height: 52px;
     text-align: center;
-    font-size: 0.26rem;
+    font-size: 18px;
     color: #fff;
 }
 .header-back {
@@ -26,8 +26,8 @@ body {
     height: 0.18rem;
     border: solid #fff;
     border-width: 1px 0 0 1px;
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg) ;
+    transform: rotate(-45deg) ;
 }
 .header-search {
     display: block;
@@ -61,16 +61,22 @@ body {
     }
     .agent-name {
         margin-top: 0.1rem;
+        max-width: 1.35rem;
+        overflow: hidden;
         .name {
             line-height: 0.4rem;
+            height: 0.4rem;
             font-size: 0.24rem;
             color: #fff;
             font-weight: bolder;
+            overflow: hidden;
         }
         .address {
             line-height: 0.3rem;
+            height: 0.3rem;
             font-size: 0.2rem;
             color: #9b9c9c;
+            overflow: hidden;
         }
     }
     .total-num {
@@ -100,7 +106,7 @@ body {
         color: #9b9c9c;
         .icon {
             display: inline-block;
-            margin-top: -0.05rem;
+            margin-top: -0.125rem;
             margin-right: 0.05rem;
             width: 0.12rem;
             height: 0.12rem;
@@ -150,27 +156,27 @@ body {
     }
 }
 .data-tmpl {
-    padding: 0 0.18rem;
-    padding-bottom: 0.3rem;
+    padding: 0.3rem 0.18rem;
     background: #fff;    
     position: relative;
     border-radius: 0.09rem;
     .data-tmpl-title {
         line-height: 0.6rem;
-        font-size: 0.24rem;
+        font-size: 14px;
+        font-weight: bolder;
     }
     .data-tmpl-item {
         float: left;
         width: 50%;
-        line-height: 0.46rem;
-        font-size: 0.2rem;
+        line-height: 0.50rem;
+        font-size: 14px;
         .icon {
             float: left;
-            margin-top: 0.18rem;
+            margin-top: 0.15rem;
             margin-right: 0.09rem;
             width: 0.1rem;
             height: 0.1rem;
-            border-radius: 50%;
+            border-radius: 100%;
         }
         .line {
             margin: 0 0.06rem;
@@ -218,25 +224,25 @@ body {
     }
 }
 .data-tmpl-percent {
-    padding: 0 0.18rem;
-    padding-bottom: 0.3rem;
+    padding: 0.3rem 0.18rem;
     background: #fff;    
     position: relative;
     border-radius: 0.09rem;
     .data-tmpl-title {
         line-height: 0.6rem;
-        font-size: 0.24rem;
+        font-size: 14px;
+        font-weight: bolder;
     }
     .data-tmpl-item {
         line-height: 0.46rem;
-        font-size: 0.2rem;
+        font-size: 12px;
         .icon {
             float: left;
             margin-top: 0.18rem;
             margin-right: 0.09rem;
             width: 0.1rem;
             height: 0.1rem;
-            border-radius: 50%;
+            border-radius: 100%;
         }
         .line {
             margin: 0 0.06rem;
@@ -341,6 +347,10 @@ body {
     }
 }
 @media screen and (max-width:350px){
+    .data-tmpl .data-tmpl-item {
+        float: none;
+        width: 100%;
+    }
     .data-tmpl-percent {
         .data-bar-item {
             width: 26px;

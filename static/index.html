@@ -38,42 +38,18 @@
          <h3 class="title">
             <i class="title-icon"></i>
             <span class="title-textname">我的代理商</span>
-            <span class="title-line">|</span>5人
+            <span id="v-agentNum" class="title-line">|</span>{{ agentNumber }}人
         </h3>
-        <ul>
-            <li class="item">
-                <h4 class="item-title">周金柜</h4>
+        <ul id="v-angent">
+            <li class="item" v-for="item in agentData">
+                <h4 class="item-title">{{ item.name }}</h4>
                 <ol class="item-colume">
-                    <li class="item-col item-col-1">当前库存<span class="line">|</span>3000盒</li>
-                    <li class="item-col item-col-2">总计扫码率<span class="line">|</span>100%</li>
+                    <li class="item-col item-col-1">当前库存<span class="line">|</span>{{ item.kc }}盒</li>
+                    <li class="item-col item-col-2">总计扫码率<span class="line">|</span>{{ item.postPercent }}</li>
                 </ol>
                 <ol class="item-colume">
-                    <li class="item-col item-col-3">采购记录<span class="line">|</span>5批</li>
-                    <li class="item-col item-col-4">总计充值率<span class="line">|</span>100%</li>
-                </ol>
-                <a href="javascript:;" class="more-info"></a>
-            </li>
-            <li class="item">
-                <h4 class="item-title">周金柜</h4>
-                <ol class="item-colume">
-                    <li class="item-col item-col-1">当前库存<span class="line">|</span>3000盒</li>
-                    <li class="item-col item-col-2">总计扫码率<span class="line">|</span>100%</li>
-                </ol>
-                <ol class="item-colume">
-                    <li class="item-col item-col-3">采购记录<span class="line">|</span>5批</li>
-                    <li class="item-col item-col-4">总计充值率<span class="line">|</span>100%</li>
-                </ol>
-                <a href="javascript:;" class="more-info"></a>
-            </li>
-            <li class="item">
-                <h4 class="item-title">周金柜</h4>
-                <ol class="item-colume">
-                    <li class="item-col item-col-1">当前库存<span class="line">|</span>3000盒</li>
-                    <li class="item-col item-col-2">总计扫码率<span class="line">|</span>100%</li>
-                </ol>
-                <ol class="item-colume">
-                    <li class="item-col item-col-3">采购记录<span class="line">|</span>5批</li>
-                    <li class="item-col item-col-4">总计充值率<span class="line">|</span>100%</li>
+                    <li class="item-col item-col-3">采购记录<span class="line">|</span>{{ item.postTimes }}批</li>
+                    <li class="item-col item-col-4">总计充值率<span class="line">|</span>{{ item.rechargePercent }}</li>
                 </ol>
                 <a href="javascript:;" class="more-info"></a>
             </li>
@@ -143,4 +119,7 @@
         </div>
     </section>
 </body>
+<script src="js/lib/vue.js"></script>
+<script src="js/lib/vue-resource.js"></script>
+<script src="js/index.js"></script>
 </html>
